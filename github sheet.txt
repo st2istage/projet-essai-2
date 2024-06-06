@@ -1,0 +1,33 @@
+
+__________clone
+
+cd/
+mkdir My-Github
+cd My_Github\
+git clone (..../lien....)
+___________________________________________________________________________
+git status
+
+git add "esm lfichier"\                    (tzid wtnahi des fichiers mil staging area)
+								
+								working directory----->staging area------->local repository
+git reset head "esm lfichier"                      
+
+
+git commit -m "description"                (thezz mil staging area lel local repo )  //description msg yokhrj ki tji taamel verification bch tet2akked
+   
+
+git log                                    (twarrik lhistorique mtaa repository)         
+
+LOCAL REPOSITORY :
+
+working directory: lpc mteeik/win ka3ed tekhdem (les fichiers li fiha ynjmou ykounou "untracked" maaneha lgit yaarefhomch)
+
+staging area : taawnek bch taamel lorganization/changements walla ay haja bch tthabbet kball mataamel commit .
+ 								
+// A Git commit is a snapshot of your project at a specific point in time.
+//koll commit tkoun unique :Each commit is uniquely identified by a SHA-1 hash, ensuring the integrity and uniqueness of the commit
+----> staging area tkhalling triguel lprojet kball lcommit bch tokoodch taawed fiha 
+
+
+repository : lpartie li talla3 menha lel remote repository .
