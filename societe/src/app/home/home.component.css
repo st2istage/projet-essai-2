@@ -1,0 +1,23 @@
+.navbar{
+  margin-bottom: 20px;
+  padding-left: 30px;
+
+} 
+.royal-blue-navbar{
+  background-color: rgb(41, 41, 88);
+  outline: none;
+  cursor: none;
+  user-select: none;
+}
+form{
+  padding-left: 700px;
+ 
+}
+.custom {
+  color: rgb(53, 53, 115);
+  border-color: rgb(243, 243, 245);
+  font-size: 0.9rem; /* Increase font size */
+  padding: 0.75rem 1.5rem; /* Increase padding */
+  margin: 0 0.5rem; /* Add margin to separate buttons */
+  background-color: rgb(244, 245, 247);
+}
