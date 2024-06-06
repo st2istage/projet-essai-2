@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
+
   constructor(private router: Router) {
     // Constructor body
   }
@@ -23,6 +25,14 @@ export class HomeComponent {
 
   logout() {
     console.log('deconnexion');
+  }
+  gotomessages() {
+    this.router.navigate(["/app-messages"]);
+  
+  }
+  gotocontacts() {
+    this.router.navigate(["/app-contacts"]);
+  
   }
 }
 

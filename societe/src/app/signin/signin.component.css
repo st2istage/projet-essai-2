@@ -3,13 +3,24 @@
   width: 50%;
   margin:20px;
   padding: 20px;
-  border: 2px solid #08000000;
+  border: 3px solid , #555;
   border-radius: 5px;
+  
+  
 }
+.ll{
+  margin-left: 150px;
+  border-radius: 10px;
 
+}
 /* Styles for form labels */
 label {
   font-weight: bold;
+  margin-left: 160px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #555;
+  font-size: 20px;
+
 }
 
 /* Styles for form inputs */
@@ -19,6 +30,7 @@ label {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  
 }
 
 /* Styles for small form text */
@@ -39,48 +51,44 @@ label {
   width: 30%;
   padding: 10px;
   margin-top: 10px;
-  background-color: #010149;
+  background-color: #b3babe;
   border: none;
-  border-radius: 6%;
-  color: #fff;
+  border-radius: 10px;
+  color: #555;
   cursor: pointer;
 }
 
 /* Hover effect for submit button */
 .btn-primary:hover {
-  background-color: #0a642d;
+  background-color: #979494
   
 }
 form{
   margin-left: 470px;
   margin-top: 130px;
-  ;
   
 }
 button {
-  margin-left: 170px;
+  margin-left: 210px;
   border-radius: 20px;
 }
 .cadre{
   
   border-radius: 15px;
   border: 2px solid #ccc; 
-  width: 50%
+  width: 60%;
+  height: 400px;
+  background-color: #d1dfe6;
+  
+}
+.cad{
+  margin-top: 70px;
+}
+#emailHelp{
+  margin-left: 180px;
+  
 }
 
-.input-icon {
-  object-position: relative ;
-}
 
-.input-icon input {
-  padding-left: 30px; /* Ajustez cette valeur selon vos besoins */
-}
 
-.input-icon i {
-  mask-position:0%;
-  left: 10px; /* Ajustez cette valeur selon vos besoins */
-  top: 50%;
-  transform: translateY(-50%);
-  color: #ec0f0f; /* Couleur de l'icône */
-}
 

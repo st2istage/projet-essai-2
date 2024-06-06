@@ -1,0 +1,58 @@
+.contact-page {
+    padding: 20px;
+    background-color: #d1dfe6;
+    width: 50%;
+    margin-left: 350px;
+    margin-top: 130px;
+    border-radius: 12px;
+    height: 400px;
+  }
+  
+  .contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-contact-btn {
+    background-color: #555;;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .add-contact-btn:hover {
+    background-color: #555;
+  }
+  
+  .search-bar {
+    margin: 20px 0;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+  
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
+    
+  }
+  
+  .contact-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #e9eff5;
+    border-radius: 9px;
+  }
+  h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: #555;
+    font-size: 40px ;
+  }

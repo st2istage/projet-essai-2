@@ -1,0 +1,10 @@
+<div class="form-overlay">
+  <div class="contact-form">
+    <button class="close-btn" (click)="close()">x</button>
+    <h3>Ajouter un contact</h3>
+    <form (ngSubmit)="submitForm()">
+      <input type="text" [(ngModel)]="contact.name" name="name" placeholder="Nom" required>
+      <button type="submit">Ajouter</button>
+    </form>
+  </div>
+</div>
