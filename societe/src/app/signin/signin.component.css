@@ -1,19 +1,16 @@
-/* Styles for the form container */
+
 .form-container {
   width: 50%;
   margin:20px;
   padding: 20px;
   border: 3px solid , #555;
   border-radius: 5px;
-  
-  
 }
 .ll{
   margin-left: 150px;
   border-radius: 10px;
 
 }
-/* Styles for form labels */
 label {
   font-weight: bold;
   margin-left: 160px;
@@ -23,7 +20,6 @@ label {
 
 }
 
-/* Styles for form inputs */
 .form-control {
   width: 50%;
   padding: 8px;
@@ -32,20 +28,14 @@ label {
   border-radius: 4px;
   
 }
-
-/* Styles for small form text */
 .form-text {
   font-size: 0.8em;
   color: #6c757d;
 }
-
-/* Styles for form checkbox */
 .form-check-input {
   margin-top: 5px;
   margin-right: 5px;
 }
-
-/* Styles for submit button */
 .btn-primary {
   display: block;
   width: 30%;
@@ -57,8 +47,6 @@ label {
   color: #555;
   cursor: pointer;
 }
-
-/* Hover effect for submit button */
 .btn-primary:hover {
   background-color: #979494
   
