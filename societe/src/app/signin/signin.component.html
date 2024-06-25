@@ -1,18 +1,18 @@
-<form>
-   <div class="cadre">
+<div class="cadre">
+  <form (ngSubmit)="onSubmit()">
     <div class="cad">
-     <div class="form-group" autoComplete ="off">
-      <label for="exampleInputEmail1 ll"> Email address</label>
-      <div class="input-icon ">
-        <input type="email" class="form-control ll" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="Enter email">
+      <div class="form-group" autoComplete="off">
+        <label for="exampleInputEmail1 ll"> Email address</label>
+        <div class="input-icon">
+          <input type="email" class="form-control ll" id="email" [(ngModel)]="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+        </div>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
-      <small id="emailHelp" class="form-text text-muted ">We'll never share your email with anyone else.</small>
-     </div>
-     <div class="form-group">
-      <label for="exampleInputPassword1 ll">Password</label>
-      <input type="password" class="form-control ll" id="exampleInputPassword1" placeholder="Password">
-     </div>
-    <button type="button" class="btn btn-primary " (click)="gotosignin()">Submit</button>
-   </div>
-   </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1 ll">Password</label>
+        <input type="password" class="form-control ll" id="password" [(ngModel)]="password" name="password" placeholder="Password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
   </form>
+</div>

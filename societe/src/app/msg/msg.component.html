@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="contact-form">
+    <form (ngSubmit)="onSubmit()">
+      <h2>Sélection De Données à Crypter</h2>
+
+      <div class="form-group">
+        <label for="dataType">Type de Données :</label>
+        <select id="dataType" name="dataType" (change)="updateFileInput()">
+          <option value="file">Fichier</option>
+          <option value="folder">Dossier</option>
+          <option value="image">Image</option>
+          <option value="video">Vidéo</option>
+          <option value="document">Document</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="fileInput">Téléchargez votre fichier :</label>
+        <input type="file" id="fileInput" name="fileInput">
+      </div>
+
+      <div class="Entreprise">
+        <label for="recipientCompany">Entreprise Destinataire :</label>
+        <select id="recipientCompany" name="recipientCompany">
+          <option value="A">Entreprise A</option>
+          <option value="B">Entreprise B</option>
+          <option value="C">Entreprise C</option>
+        </select>
+      </div>
+
+      <h2>Cryptage de Données</h2>
+
+      <div class="form-group">
+        <label for="dataToEncrypt">Entrez les données à crypter :</label>
+        <textarea id="dataToEncrypt"[(ngModel)]="dataToEncrypt" name="dataToEncrypt"  required></textarea>
+      </div>
+
+      <button type="button" class="btn btn-primary" (click)="crypterDonnees()">Crypter</button>
+
+  
+  <div class="contact-info">
+    <h1 class="uss">Contactez<br></h1>
+    <h1 class="us">_______Nous</h1>
+  </div>
+

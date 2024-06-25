@@ -1,15 +1,61 @@
+import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule, NgModel } from '@angular/forms';
+import { services } from '../services.service'; 
+import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
+declare let window: any;
 
 @Component({
   selector: 'app-signup',
+  imports: [FormsModule, CommonModule, RouterModule],
   standalone: true,
-  imports: [],
   templateUrl: './signup.component.html',
-  styleUrl: './signup.component.css'
+  styleUrls: ['./signup.component.css']
 })
 export class SignupComponent {
-gotosignup() {
-throw new Error('Method not implemented.');
-}
+  nom: string = '';
+  email: string = '';
+  password: string = '';
+  Address2: string = '';
+  city: string = '';
+  _text: string | undefined;
 
+  constructor(private service: services, private router: Router) {}
+
+  onSubmit() {
+    const encryptedNom = this.service.encrypt(this.nom);
+    const encryptedEmail = this.service.encrypt(this.email);
+    const encryptedPassword = this.service.encrypt(this.password);
+    const encryptedAddress2 = this.service.encrypt(this.Address2);
+    const encryptedCity = this.service.encrypt(this.city);
+    console.log('Encrypted Nom:', encryptedNom);
+    console.log('Encrypted Email:', encryptedEmail);
+    console.log('Encrypted Password:', encryptedPassword);
+    console.log('Encrypted Address2:', encryptedAddress2);
+    console.log('Encrypted City:', encryptedCity);
+  }
+
+  ngOnInit() {
+    this.encryptUrl();
+    console.log('url :' + this._text);
+  }
+
+  encryptUrl() {
+    const encodedUrl = encodeURIComponent(window.location.href);
+    window.history.replaceState({}, '', encodedUrl);
+  }
+
+  ngAfterViewInit() {
+    this.router.events.subscribe((event: any) => {
+      if (event instanceof NavigationEnd) {
+        this.encryptUrl();
+      }
+    });
+  }
+
+  gotosignup() {
+    throw new Error('Function not implemented.');
+  }
 }
