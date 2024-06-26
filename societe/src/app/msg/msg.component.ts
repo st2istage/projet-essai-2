@@ -25,7 +25,7 @@ export class MsgComponent {
   }
   crypterDonnees() {
     const dataToEncrypt = this.service.encrypt(this.dataToEncrypt);
-    console.log('Encrypted data:', dataToEncrypt);
+    console.log( dataToEncrypt);
     }
 updateFileInput() {
 throw new Error('Method not implemented.');

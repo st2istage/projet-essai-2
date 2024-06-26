@@ -30,11 +30,11 @@ export class SignupComponent {
     const encryptedPassword = this.service.encrypt(this.password);
     const encryptedAddress2 = this.service.encrypt(this.Address2);
     const encryptedCity = this.service.encrypt(this.city);
-    console.log('Encrypted Nom:', encryptedNom);
-    console.log('Encrypted Email:', encryptedEmail);
-    console.log('Encrypted Password:', encryptedPassword);
-    console.log('Encrypted Address2:', encryptedAddress2);
-    console.log('Encrypted City:', encryptedCity);
+    console.log(encryptedNom);
+    console.log( encryptedEmail);
+    console.log( encryptedPassword);
+    console.log( encryptedAddress2);
+    console.log( encryptedCity);
   }
 
   ngOnInit() {
