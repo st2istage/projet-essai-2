@@ -1,27 +1,13 @@
-body {
-    font-family: Arial, sans-serif;
-    color: rgb(126, 119, 148);
-    margin: 0;
-    background-color: #a8a6a6;
-   
-    
-}
-.container {
-    display: flex;
-    justify-content: space-between;
-}
-
 .thoughts{
-   height: 40%;
+   height: 50%;
 }
 .contact-form {
-    width: 100%;
-    height: 400px;
+    width: 80%;
+    height: 500px;
     border-radius: 12px;
     margin-top: 70px;
     margin-bottom: 100px;
     background-color: #d1dfe6;
-   
 }
 .contact-info {
     width: 20%;
@@ -31,76 +17,62 @@ body {
     margin-right: 00px;
 }
 input[type="text"],
-textarea {
-    width: calc(70% - 20px);
+.btn {
+    display: block;
+    width: 20%;
     padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 130px;
-    background-color: #eaeef3;
+    margin-top: 80px;
+    background-color:#194569 ;
     border: none;
-    color: #f0efec;
-    border-radius: 5px;
-    height: 100px;
-}
-.butt1 {
-    background-color: #b3babe;
-    border: none;
-    padding: 10px;
-    width: 15%;
-    margin-left: 350px;
-    border-radius: 5px;
-    color:#555;
-}
-.butt2 {
-    background-color: #b3babe;
-    border: none;
-    padding: 10px;
-    width: 15%;
-    margin-left: 150px;
-    
-    border-radius: 5px;
-    color:#555;
-}
+    border-radius: 10px;
+    color:  #979494;
+    cursor: pointer;
+    margin-left: 800px; 
+  }
+  .btn:hover {
+    background-color: #b3babe;;
+  }
 .us{
-    margin-left: 62px;
-    font-size: 45px;
-    color:#555;
+  position: absolute; 
+  top: 20px; 
+  right: 20px; 
+  font-size: 50px; 
+  color: #194569; 
+  margin-top: 350px; 
 }
 .uss{
-    font-size: 45px;
-    color:#555;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    font-size: 50px; 
+    color: #194569; 
+    margin-top: 300px;
 }
 h2{
     font-family: 'Times New Roman', Times, serif;
-    background-color: #eaeef3;
     border: none;
     padding: 10px;
-    width: 70%;
-    margin-top: 15px;
-    border-radius: 5px;
-    color:#555;
-    margin-left: 130px;
+    width: 50%;
+    margin-top: 20px;
+    color:#194569;
+    margin-left: 40px;
 }
 .form-group{
-    margin-left: 130px; 
-    margin-top: 10px;
-    
-    
+    margin-left: 80px; 
+    margin-top: 10px;  
 }
 .Entreprise{
-    margin-left: 130px;
+    margin-left: 80px;
     margin-top: 10px;
-
 }
 textarea {
-    width: 100%; /* Largeur à 100% de son conteneur */
-    padding: 10px; /* Espacement intérieur */
-    font-size: 16px; /* Taille de police */
-    line-height: 1.5; /* Hauteur de ligne */
-    border: 1px solid #ccc; /* Bordure */
-    border-radius: 4px; /* Bordure arrondie */
-    resize: vertical; /* Redimensionnement vertical */
+    width: 80%; 
+    padding: 10px; 
+    font-size: 15px; 
+    line-height: 1.5; 
+    border: 1px solid #194569; 
+    border-radius: 4px; 
+    resize: vertical; 
     color:#555;
-
+    height: 80px;
   }

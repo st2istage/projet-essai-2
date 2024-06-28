@@ -1,33 +1,38 @@
 <nav class="navbar navbar-expand-lg navbar-dark royal-blue-navbar">
-  <p class="navbar-brand" >ST2I</p>
+  <p class="navbar-brand" ></p>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
+        <a class="nav-link" routerLink="/home" (click)="gotosec()">5ecurity</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" routerLink="/home" (click)="gotoacceuil()">Accueil</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/profile">Profil</a>
+        <a class="nav-link" routerLink="/profil"(click)="gotoprofil()">Profil</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/messages"(click)="gotomsgs()">Messages</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/security">Sécurité</a>
+        <a class="nav-link" routerLink="/security"(click)="gotosecurity()">Sécurité</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/help">Aide</a>
+        <a class="nav-link" routerLink="/help"(click)="gotoaide()">Aide</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerlink="signin" (click)="gotosignin()">Déconnexion</a>
       </li>
     </ul>
+
     <form class="d-flex" role="search">
       <button class="btn btn-outline-success custom" type="submit" routerlink="/signup" (click)="gotosignup()">SignUp</button>
       <button class="btn btn-outline-success custom" type="submit" routerlink ="/signin"(click)="gotosignin()">SignIn</button>
     </form>
   </div>
  </nav>
+
  

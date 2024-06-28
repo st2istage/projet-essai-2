@@ -1,15 +1,5 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
 .calendar {
-    background: white;
+    background: #194569;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -20,16 +10,16 @@ body {
 }
 
 .month ul {
-    color: #555;
+    color: #d1dfe6;
     padding: 20px;
     text-align: center;
     margin: 0;
     position: relative;
-    background-color: #d1dfe6;
+    background-color: #194569;
 }
 
 .month ul li {
-    color: #555;
+    color: #d1dfe6;
     font-size: 18px;
     list-style-type: none;
     text-transform: uppercase;
@@ -52,8 +42,8 @@ body {
 }
 
 .weekdays {
-    background-color: #ddd;
-    color: #666;
+    background-color: #d1dfe6;
+    color:#194569 ;
     display: flex;
     padding: 10px 0;
     text-align: center;
@@ -90,7 +80,7 @@ body {
 }
 .contact-page {
     padding: 20px;
-    background-color: #d1dfe6;
+    background-color: #194569;
     width: 20%;
     border-radius: 12px;
     height: 600px;
@@ -139,12 +129,13 @@ body {
   .contact-list li {
     padding: 10px;
     border-bottom: 1px solid #ddd;
-    background-color: #e9eff5;
+    background-color: #d1dfe6;
     border-radius: 9px;
+    margin-top: 10px;
   }
   h2{
     font-family: 'Times New Roman', Times, serif;
-    color: #555;
+    color: #d1dfe6;
     font-size: 40px ;
   }
 
@@ -191,12 +182,16 @@ body {
 }
 
 .cta-button {
-  background-color: #007BFF;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  margin-top: 20px;
-  display: inline-block;
+  display: block;
+  width: 20%;
+  padding: 10px; 
+  background-color:#194569 ;
+  border: none;
+  border-radius: 10px;
+  color:  #979494;
+  cursor: pointer;
+   
+}
+.cta-button:hover {
+  background-color: #b3babe;;
 }

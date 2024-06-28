@@ -1,29 +1,30 @@
-
 .cadre {
   border-radius: 15px;
   border: 2px solid #ccc;
-  width: 60%;
-  height: 400px;
+  width: 80%;
+  height: 500px;
   background-color: #d1dfe6;
   margin: 0 auto;
   padding: 20px; 
+  margin-top: 80px;
 }
 
 .cad {
-  margin-top: 30px; 
+  margin-top: 80px; 
+  margin-right: 100px;
 }
 
 .ll {
-  margin-left: 150px; 
+  margin-left: 130px; 
   border-radius: 10px;
 }
 
 label {
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
-  color: #555;
+  color: #194569 ;
   font-size: 20px;
-  margin-left: 160px;
+  margin-right: 960px;
 }
 
 .form-control {
@@ -36,27 +37,27 @@ label {
 
 .form-text {
   font-size: 0.8em;
-  color: #6c757d;
+  color: #194569;
 }
 
 .btn-primary {
   display: block;
-  width: 30%;
+  width: 20%;
   padding: 10px;
-  margin-top: 20px;
-  background-color: #b3babe;
+  margin-top: 100px;
+  background-color:#194569 ;
   border: none;
   border-radius: 10px;
-  color: #555;
+  color:  #979494;
   cursor: pointer;
-  margin-left: 180px; 
+  margin-left: 900px; 
 }
-
 .btn-primary:hover {
-  background-color: #979494;
+  background-color:  #b3babe;;
+
 }
 
 form {
-  margin-top: 50px; 
+  margin-top: 100px; 
   text-align: center;
 }

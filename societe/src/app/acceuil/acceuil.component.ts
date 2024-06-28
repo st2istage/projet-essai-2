@@ -41,8 +41,6 @@ export class AcceuilComponent {
   }
   monthNames: any;
   gotoacceuil() {
-    throw new Error('Method not implemented.');
-
 }
  
   currentMonth: number = new Date().getMonth();
