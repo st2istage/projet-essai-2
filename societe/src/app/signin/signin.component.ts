@@ -20,12 +20,12 @@ export class SigninComponent {
   onSubmit() {
     const encryptedEmail = this.service.encrypt(this.email);
     const encryptedPassword = this.service.encrypt(this.password);
-    console.log('Encrypted Email:', encryptedEmail);
-    console.log('Encrypted Password:', encryptedPassword);
+    console.log(encryptedEmail);
+    console.log(encryptedPassword);
   }
   ngOnInit() {
     this.encryptUrl();
-    console.log('url :' + this._text);
+    console.log( this._text);
   }
 
   encryptUrl() {
