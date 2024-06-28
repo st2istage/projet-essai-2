@@ -1,19 +1,32 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { services } from '../services.service';
+import { NgIf } from '@angular/common';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [NgIf],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-gotomsg() {
-throw new Error('Method not implemented.');
+gotosec() {
+  this.router.navigate(["/app-sec"]);
 }
+gotoaide() {
+  this.router.navigate(["/app-aide"]);
+}
+gotoprofil() {
+  this.router.navigate(["/app-profil"]);
+}
+gotosecurity() {
+  this.router.navigate(["/app-security"]);
+
+}
+
+
   services: any;
 
 
@@ -39,7 +52,9 @@ throw new Error('Method not implemented.');
     this.router.navigate(["/app-acceuil"]);
   
   }
+ 
   constructor(private router: Router) {}
+
 
 }
 
