@@ -11,8 +11,13 @@ declare let window: any;
 
 })
 export class SecComponent {
+
+  constructor(private router : Router){}
+gotoourteam() {
+  this.router.navigate(["/app-our-team"]);
+}
   _text: string | undefined;
-  router: any;
+  
 
   ngOnInit() {
     this.encryptUrl();
@@ -32,7 +37,8 @@ export class SecComponent {
     });
   }
 gotosignup() {
-throw new Error('Method not implemented.');
+  this.router.navigate(["/app-signup"]);
 }
-gotosec(){}
+gotosec(){  this.router.navigate(["/app-sec"]);}
+
 }

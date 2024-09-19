@@ -12,15 +12,15 @@ import { NgIf } from '@angular/common';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
+
 gotosec() {
   this.router.navigate(["/app-sec"]);
 }
 gotoaide() {
   this.router.navigate(["/app-aide"]);
 }
-gotoprofil() {
-  this.router.navigate(["/app-profil"]);
-}
+
 gotosecurity() {
   this.router.navigate(["/app-security"]);
 
@@ -53,6 +53,10 @@ gotosecurity() {
   
   }
  
+  gotoourteam() {
+    this.router.navigate(["/app-our-team"]);
+  
+  }
   constructor(private router: Router) {}
 
 

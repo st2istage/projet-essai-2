@@ -12,9 +12,11 @@ declare let window: any;
   standalone: true,
 })
 export class SigninComponent {
+
   email: string = '';
   password: string = '';
   _text: string | undefined;
+name: any;
   constructor(private service: services, private router: Router) {}
 
   onSubmit() {
@@ -43,6 +45,27 @@ export class SigninComponent {
 
 }
 gotosignin() {
-  throw new Error('Function not implemented.');
+  this.router.navigate(["/app-signin"]);
 }
+gotosignup() {
+  this.router.navigate(["/app-signup"]);
+}
+gotoforgot() {
+  this.router.navigate(["/app-forgot"]);
+}
+showPassword: boolean = false; // Initially hide password
+
+
+// Toggle password visibility
+togglePasswordVisibility(): void {
+  this.showPassword = !this.showPassword;
+}
+
+
+// Prevent default behavior for links within the form
+preventDefault(event: Event): void {
+  event.preventDefault();
+}
+
+
 }

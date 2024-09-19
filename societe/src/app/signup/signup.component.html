@@ -2,27 +2,80 @@
   <form (ngSubmit)="onSubmit()">
     <div class="form-row ll">
       <div class="form-group col-md-6">
-        <label for="nom">Nom Complet</label>
-        <input type="text" class="form-control" id="nom" [(ngModel)]="nom" name="nom" placeholder="Nom Complet" required>
+        <label for="nom">Full Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nom"
+          [(ngModel)]="nom"
+          name="nom"
+          placeholder="Nom Complet"
+          required
+        />
       </div>
       <div class="form-group col-md-6 ll">
         <label for="email">E-mail</label>
-        <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" placeholder="Email" required>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          [(ngModel)]="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
       </div>
     </div>
+
     <div class="form-group ll">
       <label for="password">Password</label>
-      <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" placeholder="Password" required>
+      <div style="position: relative;">
+        <input
+          [type]="showPassword ? 'text' : 'password'"
+          class="form-control"
+          id="password"
+          [(ngModel)]="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <span
+          class="toggle-password"
+          (click)="togglePasswordVisibility()"
+          style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;"
+        >
+          {{ showPassword ? 'Hide' : 'Show' }}
+        </span>
+      </div>
     </div>
+
     <div class="form-group ll">
       <label for="Address2">Address</label>
-      <input type="text" class="form-control" id="Address2" [(ngModel)]="Address2" name="Address2" placeholder="Adresse" required>
+      <input
+        type="text"
+        class="form-control"
+        id="Address2"
+        [(ngModel)]="Address2"
+        name="Address2"
+        placeholder="Adresse"
+        required
+      />
     </div>
+
     <div class="form-row ll">
       <div class="form-group col-md-6">
         <label for="city">City</label>
-        <input type="text" class="form-control" id="city" [(ngModel)]="city" name="city" placeholder="City" required>
+        <input
+          type="text"
+          class="form-control"
+          id="city"
+          [(ngModel)]="city"
+          name="city"
+          placeholder="City"
+          required
+        />
       </div>
+
       <div class="form-group col-md-4 ll">
         <label for="inputState">State</label>
         <select id="inputState" class="form-control">
@@ -34,6 +87,11 @@
         </select>
       </div>
     </div>
+
     <button type="submit" class="btn btn-primary ll">Sign in</button>
   </form>
+</div>
+
+<div class="background-container">
+  <!-- Le reste du contenu ici -->
 </div>

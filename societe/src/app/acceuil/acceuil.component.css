@@ -1,197 +1,95 @@
-.calendar {
-    background: #194569;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 350px; 
-    float: right;
-    margin-right: 30px;
-    user-select: none;
+h1{
+  margin-left: 230px; 
+  font-family: 'Times New Roman', Times, serif;
+  color: #194569;
+}
+h2{
+  
+  color: antiquewhite;
+
+}
+p{
+color: aliceblue;
 }
 
-.month ul {
-    color: #d1dfe6;
-    padding: 20px;
-    text-align: center;
-    margin: 0;
-    position: relative;
-    background-color: #194569;
+.container{
+  margin-left: 100px;
+}
+.safe{
+padding: 20px;
+background-color: #194569;
+width: 25%;
+border-radius: 12px;
+height: 250px;
+float: left;
+margin-top: 1px;
+margin-left: 100px;
 }
 
-.month ul li {
-    color: #d1dfe6;
-    font-size: 18px;
-    list-style-type: none;
-    text-transform: uppercase;
-}
-
-.month .prev,
-.month .next {
-    cursor: pointer;
-    padding: 0 10px;
-    position: absolute;
-    top: 20px;
-}
-
-.month .prev {
-    left: 10px;
-}
-
-.month .next {
-    right: 10px;
-}
-
-.weekdays {
-    background-color: #d1dfe6;
-    color:#194569 ;
-    display: flex;
-    padding: 10px 0;
-    text-align: center;
-    margin: 0;
-}
-
-.weekdays li {
-    flex: 1;
-    list-style-type: none;
-}
-
-.days {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    padding: 10px;
-    margin: 0;
-}
-
-.days li {
-    background: #eee;
-    border-radius: 5px;
-    color: #777;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2px;
-    height: 40px;
-}
-
-.days li:hover {
-    background: #ddd;
-}
-.contact-page {
+.free{
+  padding: 20px;
+  background-color: #194569;
+  width: 25%;
+  border-radius: 12px;
+  height: 250px;
+  float: left;
+  margin-top: 1px;
+  margin-left: 100px;
+  }
+  .support{
     padding: 20px;
     background-color: #194569;
-    width: 20%;
+    width: 25%;
     border-radius: 12px;
-    height: 600px;
+    height: 250px;
     float: left;
     margin-top: 1px;
-    margin-left: 20px;
+    margin-left: 100px;
+    }
+    .use{
+      padding: 20px;
+      background-color: #194569;
+      width: 25%;
+      border-radius: 12px;
+      height: 250px;
+      float: left;
+      margin-top: 5px;
+      margin-left: 100px;
+      }
+      .confident{
+        padding: 20px;
+        background-color: #194569;
+        width: 25%;
+        border-radius: 12px;
+        height: 250px;
+        float: left;
+        margin-top: 5px;
+        margin-left: 100px;
+        }
+        .advanced{
+          padding: 20px;
+          background-color: #194569;
+          width: 25%;
+          border-radius: 12px;
+          height: 250px;
+          float: left;
+          margin-top: 5px;
+          margin-left: 100px;
+          }
+  .background-container {
+    display: block;
+    position: fixed; /* Assure que l'image reste fixe en arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Couvre toute la largeur de l'écran */
+    height: 100vh; /* Couvre toute la hauteur de l'écran */
+    background-image: url('https://informationage-production.s3.amazonaws.com/uploads/2022/10/predictions-for-cyber-security-2020.jpeg'); /* Image de fond */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite que l'image se répète */
+    z-index: -1; /* Met l'image en arrière-plan */
+    margin: 0; /* Enlève toute marge */
+    padding: 0; /* Enlève tout padding */
   }
   
-  .contact-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   
-  .add-contact-btn {
-    background-color:#d1dfe6;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 50%;
-  }
-  
-  .add-contact-btn:hover {
-    background-color: #555;
-  }
-  
-  .search-bar {
-    margin: 20px 0;
-  }
-  
-  .search-bar input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 12px;
-  }
-  
-  .contact-list {
-    list-style-type: none;
-    padding: 0;
-    
-  }
-  
-  .contact-list li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    background-color: #d1dfe6;
-    border-radius: 9px;
-    margin-top: 10px;
-  }
-  h2{
-    font-family: 'Times New Roman', Times, serif;
-    color: #d1dfe6;
-    font-size: 40px ;
-  }
-
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .box {
-    width: 200px;
-    margin: 20px;
-    text-align: center;
-  }
-  
-  .box img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%
-    colo;
-  }
-  
-  .box p {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-.hero-banner {
-  background: url('/assets/images/background.jpg') no-repeat center center;
-  background-size: cover;
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.hero-content h1 {
-  font-size: 3em;
-}
-
-.hero-content p {
-  font-size: 1.5em;
-}
-
-.cta-button {
-  display: block;
-  width: 20%;
-  padding: 10px; 
-  background-color:#194569 ;
-  border: none;
-  border-radius: 10px;
-  color:  #979494;
-  cursor: pointer;
-   
-}
-.cta-button:hover {
-  background-color: #b3babe;;
-}

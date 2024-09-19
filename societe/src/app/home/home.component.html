@@ -6,33 +6,33 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/home" (click)="gotosec()">5ecurity</a>
+        <a class="nav-link" routerLink="/home" (click)="gotosec()">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/home" (click)="gotoacceuil()">Accueil</a>
+        <a class="nav-link" routerLink="/home" (click)="gotoacceuil()">Ressources</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/messages"(click)="gotomsgs()">Crypto</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/profil"(click)="gotoprofil()">Profil</a>
+        <a class="nav-link" routerLink="/security"(click)="gotosecurity()">About Us </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/messages"(click)="gotomsgs()">Messages</a>
+        <a class="nav-link" routerlink="/ourteam" (click)="gotoourteam()">team</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/security"(click)="gotosecurity()">Sécurité</a>
+        <a class="nav-link" routerlink="signin" (click)="gotosignin()">logout</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/help"(click)="gotoaide()">Aide</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerlink="signin" (click)="gotosignin()">Déconnexion</a>
-      </li>
+      
     </ul>
 
     <form class="d-flex" role="search">
       <button class="btn btn-outline-success custom" type="submit" routerlink="/signup" (click)="gotosignup()">SignUp</button>
       <button class="btn btn-outline-success custom" type="submit" routerlink ="/signin"(click)="gotosignin()">SignIn</button>
+      
     </form>
   </div>
  </nav>
-
+ 
  

@@ -1,0 +1,71 @@
+.language-notification {
+    position: absolute;
+    top: 50px; /* ajustez selon votre mise en page */
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .language-notification ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .language-notification ul li {
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .language-notification ul li:hover {
+    background-color: #f0f0f0;
+  }
+  .btn {
+    display: block;
+    width: 2%;
+    padding: 10px;
+    margin-top: 0px;
+    background-color:#194569 ;
+    border: none;
+    border-radius: 10px;
+    color:  #979494;
+    cursor: pointer;
+    margin-left: 200px; 
+  }
+  .btn:hover {
+    background-color: #b3babe;;
+  }
+  /* Section Historique des Communications */
+  .data-sent-notification {
+    position: absolute;
+    top: 50px; /* Ajustez selon votre mise en page */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  .data-sent-notification p {
+    margin-bottom: 10px;
+  }
+  
+  .close-btn {
+    display: block;
+    width: 2%;
+    padding: 10px;
+    margin-top: 0px;
+    background-color:#194569 ;
+    border: none;
+    border-radius: 10px;
+    color:  #979494;
+    cursor: pointer;
+    margin-left: 200px; 
+  }
+  .close-btn:hover {
+    background-color: #b3babe;
+  }

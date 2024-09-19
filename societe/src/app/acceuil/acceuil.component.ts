@@ -16,6 +16,14 @@ declare let window: any;
     standalone: true,
 })
 export class AcceuilComponent {
+gotomsg() {
+throw new Error('Method not implemented.');
+}
+  constructor(private router : Router ){}
+gotoprofil() {
+  this.router.navigate(['/app-profil']);
+
+}
   contacts = [
     { name: 'narimen' },
     { name: 'maryem' },
@@ -24,7 +32,7 @@ export class AcceuilComponent {
   filteredContacts = [...this.contacts];
   searchQuery = '';  
   showForm = false;
-  router: any;
+ 
 
   toggleForm() {
     this.showForm = !this.showForm;

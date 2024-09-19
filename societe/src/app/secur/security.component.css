@@ -1,0 +1,51 @@
+.section {
+    margin-bottom: 20px;
+  }
+  h1, h2, h3 {
+    color:#194569 ;
+  }
+  .intro {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-left: 5px solid #333;
+  }
+  .section p {
+    margin: 10px 0;
+  }
+  .contact {
+    background-color:#b3babe ;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  .btn {
+    display: block;
+    width: 20%;
+    padding: 10px;
+    background-color:#194569 ;
+    border: none;
+    border-radius: 10px;
+    color:  #979494;
+    cursor: pointer;
+    margin-left: 400px; 
+    margin-top: 5px;
+  }
+  .btn:hover {
+    background-color:  #b3babe;;
+  }
+   .background-container {
+    display: block;
+    position: fixed; /* Assure que l'image reste fixe en arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Couvre toute la largeur de l'écran */
+    height: 100vh; /* Couvre toute la hauteur de l'écran */
+    background-image: url('https://informationage-production.s3.amazonaws.com/uploads/2022/10/predictions-for-cyber-security-2020.jpeg'); /* Image de fond */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite que l'image se répète */
+    z-index: -1; /* Met l'image en arrière-plan */
+    margin: 0; /* Enlève toute marge */
+    padding: 0; /* Enlève tout padding */
+
+  }

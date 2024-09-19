@@ -1,67 +1,81 @@
-label {
-    font-weight: bold;
-    margin-right : 0px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #194569 ;
-    }
-  
-  .form-control {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-left: 70px;
-  }
-  
- 
-  .form-text {
-    font-size: 0.8em;
-    color: #6c757d;
-    margin-left: 70px;
-  }
-  
- 
-  .form-check-input {
-    margin-top: 5px;
-    margin-right: 5px;
-    margin-left: 100px;
-  }
-  
-  
-  .btn-primary {
+.cadre {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto; /* Place le formulaire à droite */
+  margin-right: 20px; /* Espace à droite */
+  padding: 20px;
+}
+
+.ll {
+  margin-bottom: 20px; /* Espace entre chaque groupe de formulaire */
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group.col-md-6 {
+  width: 48%; /* Largeur pour chaque champ à 2 colonnes */
+}
+
+.form-group.col-md-4 {
+  width: 31%; /* Largeur du champ 'State' à 3 colonnes */
+}
+
+input.form-control, select.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-primary {
   display: block;
   width: 30%;
   padding: 10px;
-  margin-top: 100px;
+  margin-top: 50px;
   background-color:#194569 ;
   border: none;
   border-radius: 10px;
   color:  #979494;
   cursor: pointer;
-  margin-left: 500px; 
+  margin-left:180px; 
 }
 .btn-primary:hover {
   background-color:  #b3babe;;
 
   }
-  form{
-    margin-left: 50px;
-    margin-top: 20px;
-    width: 50%;
-  }
-  button {
-    border-radius: 20px;
-  }
-  .cadre{
-    border-radius: 15px;
-    width: 50%;
-    border: 2px solid #ccc; 
-    background-color: #d1dfe6;
-    height:600px;
-    margin-left: 400PX;
-  }
-  .ll{
-    margin-top: 20px;    
-  }
+
+
+
+  .background-container {
+    display: block;
+    position: fixed; /* Assure que l'image reste fixe en arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Couvre toute la largeur de l'écran */
+    height: 100vh; /* Couvre toute la hauteur de l'écran */
+    background-image: url('https://informationage-production.s3.amazonaws.com/uploads/2022/10/predictions-for-cyber-security-2020.jpeg'); /* Image de fond */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite que l'image se répète */
+    z-index: -1; /* Met l'image en arrière-plan */
+    margin: 0; /* Enlève toute marge */
+    padding: 0; /* Enlève tout padding */
   
+  } 
+  .toggle-password {
+    position: absolute;
+    right: 45px; /* Positions the "Show" button to the right of the input */
+    top: 36%; /* Vertically centers the toggle */
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: orange;
+    font-weight: bold;
+    font-size: 14px;
+  }

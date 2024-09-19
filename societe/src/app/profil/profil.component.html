@@ -1,1 +1,24 @@
-<p>profil works !</p>
+  <div class="profile-page">
+  <h2>Profile</h2>
+  <!-- Autres éléments de la page de profil -->
+
+  <div class="notification">
+    <!-- Cadre de notification pour la langue -->
+    <button (click)="showLanguageNotification()">profile language </button>
+    <div *ngIf="showLanguage" class="language-notification">
+      <!-- Contenu de la notification -->
+      <p>Language chosen: {{ selectedLanguage }}</p>
+      <ul>
+        <li *ngFor="let language of languages">{{ language }}</li>
+      </ul>
+    </div>
+  </div>
+  <button class="btn" (click)="closeLanguageNotification()">X</button>
+</div>
+<h2>historical</h2>
+<div class="notification">
+    <button (click)="showDataSentNotification()">Data sending history</button>
+    <div *ngIf="showDataSent" class="data-sent-notification">
+        <p>Data sent on  : <strong>{{ dataSentTime }}</strong></p>
+        <button class="close-btn" (click)="closeDataSentNotification()">X</button>
+    </div> 

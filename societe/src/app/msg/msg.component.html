@@ -1,45 +1,46 @@
 <div class="container">
   <div class="contact-form">
     <form (ngSubmit)="onSubmit()">
-      <h2>Sélection De Données à Crypter</h2>
+      <h2>select data To Encrypt</h2>
 
       <div class="form-group">
-        <label for="dataType">Type de Données :</label>
+        <label for="dataType">data type :</label>
         <select id="dataType" name="dataType" (change)="updateFileInput()">
-          <option value="file">Fichier</option>
-          <option value="folder">Dossier</option>
+          <option value="file">File</option>
+          <option value="folder">Folder</option>
           <option value="image">Image</option>
-          <option value="video">Vidéo</option>
+          <option value="video">Video</option>
           <option value="document">Document</option>
         </select>
       </div>
 
       <div class="form-group">
-        <label for="fileInput">Téléchargez votre fichier :</label>
+        <label for="fileInput">Upload your file :</label>
         <input type="file" id="fileInput" name="fileInput">
       </div>
 
       <div class="Entreprise">
-        <label for="recipientCompany">Entreprise Destinataire :</label>
+        <label for="recipientCompany">recipient company :</label>
         <select id="recipientCompany" name="recipientCompany">
-          <option value="A">Entreprise A</option>
-          <option value="B">Entreprise B</option>
-          <option value="C">Entreprise C</option>
+          <option value="A">company A</option>
+          <option value="B">company B</option>
+          <option value="C">company C</option>
         </select>
       </div>
 
-      <h2>Cryptage de Données</h2>
+      <h2>Data Encryption</h2>
 
       <div class="form-group">
-        <label for="dataToEncrypt">Entrez les données à crypter :</label>
+        <label for="dataToEncrypt">Enter the data to encrypt:</label>
         <textarea id="dataToEncrypt"[(ngModel)]="dataToEncrypt" name="dataToEncrypt"  required></textarea>
       </div>
 
-      <button type="button" class="btn btn-primary" (click)="crypterDonnees()">Crypter</button>
+      <button type="button" class="btn btn-primary" (click)="crypterDonnees()">Encrypt</button>
 
   
-  <div class="contact-info">
-    <h1 class="uss">Contactez<br></h1>
-    <h1 class="us">_______Nous</h1>
-  </div>
 
+  
+  <div class="background-container">
+    <!-- Le reste du contenu ici -->
+  </div>
+  

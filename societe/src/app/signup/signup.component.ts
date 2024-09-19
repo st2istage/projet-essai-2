@@ -56,6 +56,12 @@ export class SignupComponent {
   }
 
   gotosignup() {
-    throw new Error('Function not implemented.');
+    this.router.navigate(["/app-signup"]);
   }
+  showPassword: boolean = false; // Initially, the password is hidden
+  
+  togglePasswordVisibility(): void {
+    this.showPassword = !this.showPassword; // Toggle between showing and hiding password
+  }
+
 }

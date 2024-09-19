@@ -1,0 +1,158 @@
+.team-container {
+    text-align: center;
+    margin: 20px;
+    margin-right: 700px; 
+    
+  }
+  
+  .team-member {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+
+
+  }
+  
+  .image-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .description {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  .description h4 {
+    margin: 5px 0;
+  }
+  
+  .description p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .background-container {
+    display: block;
+    position: fixed; /* Assure que l'image reste fixe en arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Couvre toute la largeur de l'écran */
+    height: 100vh; /* Couvre toute la hauteur de l'écran */
+    background-image: url('https://informationage-production.s3.amazonaws.com/uploads/2022/10/predictions-for-cyber-security-2020.jpeg'); /* Image de fond */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite que l'image se répète */
+    z-index: -1; /* Met l'image en arrière-plan */
+    margin: 0; /* Enlève toute marge */
+    padding: 0; /* Enlève tout padding */
+  }
+  h3{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #194569 ;
+  }
+  h2{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #194569 ;
+    margin-left: 500pxx;
+  }
+  .contact-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    display: flex;
+    gap: 70px;
+    margin-bottom: 30px;
+    margin-left: 920px;
+    
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .info-item i {
+    font-size: 24px;
+    color: #1ac8db;
+    margin-right: 10px;
+  }
+  
+  .contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-left: 900px;
+    margin-bottom: 900px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .form-row input {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    background-color: #194569; 
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #b3babe;
+  }
+
+    
+    .contain {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 80px; /* Ajustez selon l'espace désiré en bas */
+        margin-left: 20px; /* Ajustez selon l'espace désiré à gauche */
+        box-sizing: border-box; /* Inclure les marges et le padding dans la taille totale */
+      }
+      
+  
+  button:hover {
+    background-color: #17a6b7;
+  }
+  .a{
+    margin-left: 1000px;
+  }

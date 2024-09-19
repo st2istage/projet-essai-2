@@ -8,8 +8,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, NgModel } from '@angular/forms';
 import { SecComponent } from './sec/sec.component';
 import { ProfilComponent } from './profil/profil.component';
-import { SecurityComponent } from './security/security.component';
-import { AideComponent } from './aide/aide.component';
+import { SecurityComponent } from './secur/security.component';
+import { OurTeamComponent } from './our-team/our-team.component';
+import { ForgotComponent } from './forgot/forgot.component';
+
+
+
 export const routes: Routes = [
   { path: '', redirectTo: '/acceuil', pathMatch: 'full' },
   {path :"app-signin" , component: SigninComponent},
@@ -20,7 +24,12 @@ export const routes: Routes = [
   {path: "app-sec",component : SecComponent},
   {path: "app-profil",component : ProfilComponent},
   {path: "app-security",component : SecurityComponent},
-  {path: "app-aide",component : AideComponent}
+  {path: "app-our-team",component : OurTeamComponent},
+  {path: "app-forgot",component : ForgotComponent},
+  { path: '', redirectTo: '/app-signin', pathMatch: 'full' }, 
+
+
+  
 
   
 ];

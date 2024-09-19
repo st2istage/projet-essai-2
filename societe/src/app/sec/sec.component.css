@@ -16,19 +16,56 @@
   margin-top: 200px;
   color: #194569 ;
 }
-.btn {
-  display: block;
+.s{
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  
+  font-size: 25px;
+  margin-left: 390px;
+  margin-top: 20px;
+  color: #555 ;
+}
+.btn-container {
+  display: flex;
+  justify-content: flex-end; /* Aligne les boutons à droite */
+  gap: 20px; /* Espace entre les boutons, ajustable */
+  margin-right: 50px; /* Ajuste la marge de droite du conteneur si nécessaire */
+}
+.btn, .btna {
   width: 20%;
   padding: 10px;
-  margin-top: 100px;
-  background-color:#194569 ;
+  background-color: #194569;
   border: none;
   border-radius: 10px;
-  color:  #979494;
+  color: #979494;
   cursor: pointer;
-  margin-left: 1200px; 
+  margin-top: 100px; /* Ajuste la marge si besoin */
 }
 .btn:hover {
   background-color:  #b3babe;;
 }
+.btna:hover {
+  background-color:  #b3babe;;
+}
 
+body {
+  
+  background-repeat: no-repeat; /* Ne pas répéter l'image */
+  background-size: cover; /* Couvrir toute la zone visible */
+  background-position: center; /* Centrer l'image */
+}
+.background-container {
+  display: block;
+  position: fixed; /* Assure que l'image reste fixe en arrière-plan */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Couvre toute la largeur de l'écran */
+  height: 100vh; /* Couvre toute la hauteur de l'écran */
+  background-image: url('https://static.vecteezy.com/ti/vecteur-libre/p1/686952-concept-moderne-de-securite-des-donnees-protege-les-donnees-contre-les-vols-de-donnees-et-les-attaques-de-pirates-gratuit-vectoriel.jpg'); /* Image de fond */
+  background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Évite que l'image se répète */
+  z-index: -1; /* Met l'image en arrière-plan */
+  margin: 0; /* Enlève toute marge */
+  padding: 0; /* Enlève tout padding */
+}

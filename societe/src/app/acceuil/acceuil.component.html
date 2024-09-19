@@ -1,89 +1,43 @@
 
-    <div class="calendar">
-        <div class="month">
-            <ul>
-                <li class="prev"(click)="prevMonth()">&#10094;</li>
-                <li class="next"(click)="nextMonth()">&#10095;</li>
-                <li>Juin<br><span>2024</span></li>
-            </ul>
-        </div>
-        <ul class="weekdays">
-            <li>Lu</li>
-            <li>Ma</li>
-            <li>Me</li>
-            <li>Je</li>
-            <li>Ve</li>
-            <li>Sa</li>
-            <li>Di</li>
-        </ul>
-        <ul class="days">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-            <li>11</li>
-            <li>12</li>
-            <li>13</li>
-            <li>14</li>
-            <li>15</li>
-            <li>16</li>
-            <li>17</li>
-            <li>18</li>
-            <li>19</li>
-            <li>20</li>
-            <li>21</li>
-            <li>22</li>
-            <li>23</li>
-            <li>24</li>
-            <li>25</li>
-            <li>26</li>
-            <li>27</li>
-            <li>28</li>
-            <li>29</li>
-            <li>30</li>
-        </ul>
+<div class="container">
+  <h1>Here are the benefits of our encryption service:
 
-    </div>
-    <div class="contact-page">
-        <div class="contact-header">
-          <h2>Contacts</h2>
-          <button (click)="toggleForm()" class="add-contact-btn">+</button>
-        </div>
-        <div class="search-bar">
-          <input type="text" placeholder="Rechercher un contact..." [(ngModel)]="searchQuery" (input)="filterContacts()">
-        </div>
-        <ul class="contact-list">
-          <li *ngFor="let contact of filteredContacts">{{ contact.name }}</li>
-        </ul>
-        <app-forms *ngIf="showForm" (closeForm)="toggleForm()"></app-forms>
-    </div>
-    <div class="container">
+  </h1>
+        <div class="safe">
         <div class="box">
-          <img src="lien" alt="User 1">
-          <p>sarra</p>
+         <h2>Safe and Secure:</h2> 
         </div>
-        <div class="box">
-          <img src="lien" alt="User 2">
-          <p>maryem</p>
+          <p>Our service ensures that your data is protected with strong encryption, keeping it safe from unauthorized access and cyber threats.</p>
         </div>
-     
-      </div>
 
-<div class="hero-banner">
-  <div class="hero-content">
-      <h1>Sécurisez vos transferts de données entre entreprises</h1>
-      <p>Un service de cryptage fiable et facile à utiliser pour vos échanges de données confidentielles.</p>
-      <a href="#features" class="cta-button">Commencer maintenant</a>
-  </div>
+        <div class="free">
+          <h2>Free:</h2> 
+          <p>Enjoy the benefits of data encryption without any cost, making high-level security accessible to everyone.</p>
+        </div>
+        <div class="support">
+          <h2>24/7 Support:</h2> 
+           <p> Receive around-the-clock assistance to help with any issues or questions you might have, ensuring uninterrupted service.</p>
+         </div>
+ 
+         <div class="use">
+           <h2>Ease of Use:</h2> 
+           <p>The platform is designed to be user-friendly, allowing you to encrypt and decrypt data effortlessly without requiring technical expertise</p>
+         </div>
+         <div class="confident">
+          <h2>Confidentiality Guaranteed:</h2> 
+           <p>Ensure that your communications and data exchanges remain private and protected from prying eyes, maintaining the confidentiality of sensitive information.</p>
+         </div>
+ 
+         <div class="advanced">
+           <h2>Advanced Security Features: </h2> 
+           <p>Benefit from cutting-edge encryption technology that provides enhanced protection against data breaches and unauthorized access.</p>
+         </div>  
+</div>      
+        
+
+
+
+<div class="background-container">
+  <!-- Le reste du contenu ici -->
 </div>
+

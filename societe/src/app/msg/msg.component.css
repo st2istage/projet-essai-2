@@ -21,13 +21,13 @@ input[type="text"],
     display: block;
     width: 20%;
     padding: 10px;
-    margin-top: 80px;
+    margin-top: 60px;
     background-color:#194569 ;
     border: none;
     border-radius: 10px;
     color:  #979494;
     cursor: pointer;
-    margin-left: 800px; 
+    margin-left: 600px; 
   }
   .btn:hover {
     background-color: #b3babe;;
@@ -66,7 +66,7 @@ h2{
     margin-top: 10px;
 }
 textarea {
-    width: 80%; 
+    width: 90%; 
     padding: 10px; 
     font-size: 15px; 
     line-height: 1.5; 
@@ -75,4 +75,26 @@ textarea {
     resize: vertical; 
     color:#555;
     height: 80px;
+  }
+  .background-container {
+    display: block;
+    position: fixed; /* Assure que l'image reste fixe en arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Couvre toute la largeur de l'écran */
+    height: 100vh; /* Couvre toute la hauteur de l'écran */
+    background-image: url('https://informationage-production.s3.amazonaws.com/uploads/2022/10/predictions-for-cyber-security-2020.jpeg'); /* Image de fond */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite que l'image se répète */
+    z-index: -1; /* Met l'image en arrière-plan */
+    margin: 0; /* Enlève toute marge */
+    padding: 0; /* Enlève tout padding */
+
+  }
+  .container{
+    margin-left: 680px;
+    width:1000px;
+    margin-bottom: 250px;
+
   }
