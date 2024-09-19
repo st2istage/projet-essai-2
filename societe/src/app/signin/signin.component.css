@@ -1,3 +1,4 @@
+
 .cadre {
   width: 100%;
   max-width: 500px;
@@ -44,6 +45,9 @@
   align-self: center;
 }
 
+.form-text {
+  font-size: 0.8em;
+  color: #6c757d;
 small.form-text {
   margin-top: 5px; /* Space between email and "We'll never share" text */
 }
@@ -55,6 +59,7 @@ small.form-text {
 .btn-primary {
   display: block;
   width: 30%;
+  width: 30%;
   padding: 10px;
   margin-top: 50px;
   background-color: #194569;
@@ -64,6 +69,7 @@ small.form-text {
   cursor: pointer;
   margin-left: 180px;
 }
+
 
 .btn-primary:hover {
   background-color: #b3babe;
